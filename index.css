@@ -249,7 +249,7 @@ background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, F
 {
     background: #fff;
     padding: 12px 56px;
-    color: #54a0ff;
+    color: #54a0ff ;
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -257,7 +257,7 @@ background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, F
 }
 .contact-widg button:hover
 {
-    background: #54a0ff;
+    background: #8360c3;
     color: #f1f1f1;
 }
 .services-sect
