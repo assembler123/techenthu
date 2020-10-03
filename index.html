@@ -12,7 +12,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <title>Qasim Ali | MERN stack developer</title>
     </head>
-    <body>
+    <body onresize='resetham()'>
         <a class="to-top" href='#main'><i class="fas fa-sort-up"></i></a>
         <div class='wrp' id='main'>
             <div class="ham">
@@ -285,6 +285,10 @@
     var tState = false;
     function toggleham(){
         tState = !tState;
+        document.getElementById('nav').style.display=(tState?'none':'block');
+    }
+    function resetham(){
+        tState = false;
         document.getElementById('nav').style.display=(tState?'none':'block');
     }
     fetch("https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@qasima9").then(res=>res.json()).then(data=>{
