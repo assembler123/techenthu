@@ -247,7 +247,7 @@
     
                     </div>
                     <p>I Know you are here for a reason. We all are bounded by our duties. Maybe you are an HR or someone looking to start a project. Here is a resume of mine</p>
-                    <div class="down-sect"><a href="/saiyed-qasim-ali.pdf" download="SaiyedQasimAli"><i class="fas fa-download"></i></a></div>
+                    <div class="down-sect"><a href="source/saiyed-qasim-ali.pdf" download="SaiyedQasimAli"><i class="fas fa-download"></i></a></div>
                     
                     
                     
@@ -275,8 +275,7 @@
 <script>
     fetch("https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@qasima9").then(res=>res.json()).then(data=>{
         let markup = '';
-        data.items.map((i,ind)=>{
-            if(ind!=0)
+        data.items.map(i=>{
             markup += `<div class='article'>
                         <img src=${i.thumbnail} width='100%'/>
                         <h3>${i.title}</h3>
