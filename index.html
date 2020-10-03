@@ -12,12 +12,17 @@
     <body>
         <a class="to-top" href='#main'><i class="fas fa-sort-up"></i></a>
         <div class='wrp' id='main'>
-            <ul class="nav">
+            <div class="ham">
+                <button onclick="toggleham()">
+                <i class="fas fa-bars" style='cursor:pointer' ></i>
+                </button>
+            </div>
+            <ul class="nav" id='nav'>
                 <li>Home</li>
-                <li><a href='#about'>About Me</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#project">Projects</a></li>
-                <li><a href="#blogs">Blogs</a></li>
+                <li><a href='#about' onclick="toggleham()">About Me</a></li>
+                <li><a href="#services" onclick="toggleham()">Services</a></li>
+                <li><a href="#project" onclick="toggleham()">Projects</a></li>
+                <li><a href="#blogs" onclick="toggleham()">Blogs</a></li>
                 <li class="fr-btn">
                     <button class="contact-btn"><a href='#contact'>Contact</a></button>
                 </li>
@@ -273,6 +278,12 @@
     </body>
 </html>
 <script>
+
+    var tState = false;
+    function toggleham(){
+        tState = !tState;
+        document.getElementById('nav').style.display=(tState?'none':'block');
+    }
     fetch("https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@qasima9").then(res=>res.json()).then(data=>{
         let markup = '';
         data.items.map(i=>{
@@ -286,5 +297,5 @@
         });
         $("#blog").html(markup);
     })
-
+ 
 </script>

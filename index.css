@@ -651,3 +651,179 @@ a
 {
     font-size: 19px;
 }
+.ham
+{
+    display: none;
+    background: #222;
+    color: #f1f1f1;
+}
+@media only screen and (max-width: 1200px) {
+
+  .contact-sect h2::after
+  {
+      width: 90%;
+  }
+  .services-sect h2::before
+  {
+      width: 90%;
+  }
+  .about-section h2::after
+  {
+      width: 90%;
+  }
+}
+@media only screen and (max-width: 976px)
+{
+    .about-section h2::after
+    {
+        width: 80%;
+    }
+    .grid-sect
+    {
+        display: block;
+    }
+    .gr-serv
+    {
+        grid-template-columns: 1fr 1fr;
+    }
+    .blog-section h2::before
+    {
+        width: 80%;
+    }
+    .blog
+    {
+        display: block;
+    }
+    .article
+    {
+        margin-top: 30px;
+    }
+    .gr-contact
+    {
+        display: block;
+    }
+    .contact-sect h2::after
+    {
+        width: 80%;
+    }
+    .map-q
+    {
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 600px)
+{
+
+    .about-section h2::after
+    {
+        width: 50%;
+    }
+    .blog-section h2::before
+    {
+        width: 50%;
+    }
+    .services-sect h2::before
+    {
+        width: 50%;
+    }
+    .contact-sect h2::after
+    {
+        width: 40%;
+    }
+    
+    .gr-show
+    {
+        display: block;
+    }
+    .wrp
+    {
+        background-position: top;
+    }
+    .showcase-sect h1
+    {
+        font-size: 36px;
+    }
+    .about-section h1
+    {
+        font-size: 36px;
+    }
+    .contact-sect h1
+    {
+        font-size: 36px;
+    }
+    .services-sect h1
+    {
+        font-size: 36px;
+    }
+    .blog-section h1 
+    {
+        font-size: 36px;
+    }
+    .about-section
+    {
+        width: 90%;
+    }
+    .to-top
+    {
+        left:80%
+    }
+    .gr-serv
+    {
+        display: block;
+    }
+    .obj-wrp
+    {
+        display: block;
+    }
+    .one-obj
+    {
+        margin:5px
+    }
+    .info-con
+    {
+        text-align: left;
+    }
+    .mcon h2
+    {
+        font-size: 2.4  em;
+    }
+    .nav
+    {
+        position: absolute;
+        background: #222;
+        z-index: 3;
+    }
+    .nav
+    {
+        position: fixed;
+        top:51px
+    }
+    .nav li 
+    {
+        display: block;
+    }
+    .nav li a:active
+    {
+        color: #ff6b6b;
+    }
+    .mcon
+    {
+        margin: 0px;
+    }
+    .ham{
+        display: block;
+        padding: 10px;
+        position: fixed;
+        top: 0;
+        z-index: 3;
+
+    }
+    .ham button
+    {
+        background: #222;
+        color: #f1f1f1;
+        border: none;
+        padding: 5px;
+        font-size: 21px;
+    }
+}
