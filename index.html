@@ -291,7 +291,7 @@
         document.getElementById('nav').style.display=(tState?'none':'block');
     }
     function resetham(){
-        if(Math.abs(this.outerHeight - lastOuH)<5 || Math.abs(this.outerWidth - lastOuW)<5)
+        if(Math.abs(this.outerHeight - lastOuH)<2 || Math.abs(this.outerWidth - lastOuW)<2)
             return;
         tState = false;
         document.getElementById('nav').style.display=(tState?'none':'block');
