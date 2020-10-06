@@ -19,12 +19,25 @@ html{
   padding:90px 50px;
   position:relative;
 }
+@keyframes ltrMain{
+    from{
+        transform:translateX(100px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
 .mcon h2
 {
   font-size:3em;
   text-transform:uppercase;
   color:#f1f1f1;
   margin:10px;
+  animation: ltrMain .5s ease-in ;
+  animation-fill-mode: forwards;
 }
 .mcon p 
 {

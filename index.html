@@ -284,11 +284,15 @@
 <script>
 
     var tState = false;
+    let lastOuH = window.outerHeight;
+    let lastOuW = window.outerWidth; 
     function toggleham(){
         tState = !tState;
         document.getElementById('nav').style.display=(tState?'none':'block');
     }
     function resetham(){
+        if(Math.abs(this.outerHeight - lastOuH)<5 || Math.abs(this.outerWidth - lastOuW)<5)
+            return;
         tState = false;
         document.getElementById('nav').style.display=(tState?'none':'block');
     }
