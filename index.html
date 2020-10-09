@@ -346,14 +346,14 @@
 <script>
 
     var tState = false;
-    let lastOuH = window.outerHeight;
-    let lastOuW = window.outerWidth;
+    let lastOuH = window.innerHeight;
+    let lastOuW = window.innerWidth;
     function toggleham() {
         tState = ! tState;
         document.getElementById('nav').style.display = (tState ? 'none' : 'block');
     }
     function resetham() {
-        if (Math.abs(this.outerHeight - lastOuH) < 2 || Math.abs(this.outerWidth - lastOuW) < 2) 
+        if (Math.abs(this.innerHeight - lastOuH) < 2 || Math.abs(this.innerWidth - lastOuW) < 2) 
             return;
         
         tState = false;
