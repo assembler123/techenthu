@@ -4,34 +4,61 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="index.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous"/>
         <base ref=''/>
-        <link rel="icon"  type="image/png" href="source/top.png" />
+        <link
+        rel="icon" type="image/png" href="source/top.png"/>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180188933-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-180188933-1');
+        </script>
 
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <title>Qasim Ali | MERN stack developer</title>
     </head>
     <body onresize='resetham()'>
-        <a class="to-top" href='#main'><i class="fas fa-arrow-up"></i></a>
+        <a class="to-top" href='#main'>
+            <i class="fas fa-arrow-up"></i>
+        </a>
         <div class='wrp' id='main'>
             <div class="ham">
                 <button onclick="toggleham()">
-                <i class="fas fa-bars" style='cursor:pointer' ></i>
+                    <i class="fas fa-bars" style='cursor:pointer'></i>
                 </button>
             </div>
             <ul class="nav" id='nav'>
-                <li><a href='#main' >Home</a></li>
-                <li><a href='#about' >About Me</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#project" >Projects</a></li>
-                <li><a href="#blogs" >Blogs</a></li>
+                <li>
+                    <a href='#main'>Home</a>
+                </li>
+                <li>
+                    <a href='#about'>About Me</a>
+                </li>
+                <li>
+                    <a href="#services">Services</a>
+                </li>
+                <li>
+                    <a href="#project">Projects</a>
+                </li>
+                <li>
+                    <a href="#blogs">Blogs</a>
+                </li>
                 <li class="fr-btn">
-                    <button class="contact-btn"><a href='#contact'>Contact</a></button>
+                    <button class="contact-btn">
+                        <a href='#contact'>Contact</a>
+                    </button>
                 </li>
             </ul>
-            
-            <div class='mcon' >
+
+            <div class='mcon'>
                 <h2>Hi! My Name is
                     <span class="my-name">QASIM ALI</span>
                 </h2>
@@ -52,15 +79,18 @@
                     </li>
 
                 </ul>
-                <button><a href="#services">Know More
-                    <i class="fa fa-angle-double-right"></i>
+                <button>
+                    <a href="#services">Know More
+                        <i class="fa fa-angle-double-right"></i>
                     </a>
                 </button>
 
             </div>
             <div class='knw-more'>
-                <button ><a href='#about'>Scroll Down
-                    <i class="fa fa-angle-double-down"></i></a>
+                <button>
+                    <a href='#about'>Scroll Down
+                        <i class="fa fa-angle-double-down"></i>
+                    </a>
                 </button>
             </div>
         </div>
@@ -70,12 +100,26 @@
             <div class="grid-sect">
                 <div class="det-side">
                     <p>A boy born in Delhi did His schooling from Kendriya Vidyalya Andrews Ganj. After completing his schools decided to follow his passion towards technology and love towards computers. A tech savvy always striving to better himself.</p>
-                    <p>Joined JIIT Noida in Computer science stream. Learnt various fundamentals of Computers, Microprocessors, Networking, Security, DBMS etc. This gave his life a new meaning and purpose to achieve and implement the best of the techniques to solve problems. </p>
+                    <p>Joined JIIT Noida in Computer science stream. Learnt various fundamentals of Computers, Microprocessors, Networking, Security, DBMS etc. This gave his life a new meaning and purpose to achieve and implement the best of the techniques to solve problems.
+                    </p>
                     <p>A developer who possesses enough skills to get things working with a constant zeal to learn new technologies.Knowledge of over 10 programming Languages, currently developing progressive/single page web apps using MERN stack also open for opportunities for react native mobile app development. Working with JS for 3+ years now and MERN stack about 2 years. Ready to work in a corporate/startup setup where skills can groom. Can work under deadlines effectively and efficiently. Previous experience of working with DBMS, Web application development, Machine learning, Internet of things and Data mining.</p>
                     <div class="gr3">
-                        <span class="locat"><i class=" fa-3x fas fa-map-marker-alt"></i> <p>Delhi, India</p> </span>
-                        <a style="text-decoration: none;" href="mailto:qasima9@gmail.com"><span class="email-ment"><i class="fa-3x fa fa-envelope"></i><p> qasima9@gmail.com </p> </span></a>
-                        <span class="experience"><i class="fa-3x fab fa-js"></i><p>3+ Years</p></span>
+                        <span class="locat">
+                            <i class=" fa-3x fas fa-map-marker-alt"></i>
+                            <p>Delhi, India</p>
+                        </span>
+                        <a style="text-decoration: none;" href="mailto:qasima9@gmail.com">
+                            <span class="email-ment">
+                                <i class="fa-3x fa fa-envelope"></i>
+                                <p>
+                                    qasima9@gmail.com
+                                </p>
+                            </span>
+                        </a>
+                        <span class="experience">
+                            <i class="fa-3x fab fa-js"></i>
+                            <p>3+ Years</p>
+                        </span>
                     </div>
                 </div>
                 <div class="stats-side">
@@ -105,14 +149,16 @@
                         <div class="progress ">
                             <div class="p80"></div>
                         </div>
-                        
+
                     </ul>
                 </div>
             </div>
         </section>
         <div class="contact-widg">
             <span>Impressed? Start A project?</span>
-            <button><a href='#contact'>Start Now</a></button>
+            <button>
+                <a href='#contact'>Start Now</a>
+            </button>
         </div>
         <section class="services-sect mt-5" id='services'>
             <h1>services</h1>
@@ -178,7 +224,7 @@
                     </div>
                     <div class="card-body">
                         <div class="card-title">Debugging</div>
-                        In computer programming and software development, debugging is the process of finding and resolving bugs within computer programs, software, or systems. 
+                        In computer programming and software development, debugging is the process of finding and resolving bugs within computer programs, software, or systems.
                     </div>
                 </div>
                 <div class="card">
@@ -194,7 +240,9 @@
             </div>
         </section>
         <section class="showcase-sect mt-5" id='project'>
-            <h1>showcase <i class="fas fa-lock"></i></h1>
+            <h1>showcase
+                <i class="fas fa-lock"></i>
+            </h1>
             <div class="gr-show">
                 <div class="card-templ">
                     <div class="card-templ-title">asxxxtit.io</div>
@@ -229,55 +277,69 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224090.76384238602!2d76.95317825596722!3d28.647194766681917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1601673600871!5m2!1sen!2sin" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                     <div class="info-con">
                         <div class="ic-con">
-                            <i class="fas fa-map-marker-alt"></i> <span>Address</span>: New Delhi, India
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Address</span>: New Delhi, India
                         </div>
                         <div class="ic-con">
-                            <i class="fas fa-phone-alt"></i> <span>Phone</span>: (+91) - 8700424656
+                            <i class="fas fa-phone-alt"></i>
+                            <span>Phone</span>: (+91) - 8700424656
                         </div>
                         <div class="ic-con">
-                            <i class="fas fa-envelope"></i>  <span>Email</span>: qasima9@gmail.com
+                            <i class="fas fa-envelope"></i>
+                            <span>Email</span>: qasima9@gmail.com
                         </div>
                     </div>
                 </div>
                 <div class="form">
                     <div class="obj-wrp">
                         <div class="one-obj">
-                            <i class="fas fa-star"></i>           
-                            <h3>Rated (4.3/5) by clients</h3>   
+                            <i class="fas fa-star"></i>
+                            <h3>Rated (4.3/5) by clients</h3>
                         </div>
                         <div class="one-obj">
-                            <i class="fas fa-clipboard-list"></i>    
-                            <h3>0 Deadlines missed (_check_)</h3>  
+                            <i class="fas fa-clipboard-list"></i>
+                            <h3>0 Deadlines missed (_check_)</h3>
                         </div>
                         <div class="one-obj">
-                            <i class="fab fa-react"></i>    
-                            <h3>Completed 25+ Projects in MERN stack</h3>  
+                            <i class="fab fa-react"></i>
+                            <h3>Completed 25+ Projects in MERN stack</h3>
                         </div>
-    
+
                     </div>
                     <p>I Know you are here for a reason. We all are bounded by our duties. Maybe you are an HR or someone looking to start a project. Here is a resume of mine</p>
-                    <div class="down-sect"><a href="source/saiyed-qasim-ali.pdf" download="SaiyedQasimAli"><i class="fas fa-download"></i></a></div>
-                    
-                    
-                    
+                    <div class="down-sect">
+                        <a href="source/saiyed-qasim-ali.pdf" download="SaiyedQasimAli">
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+
+
                 </div>
             </div>
         </section>
         <footer class="footer mt-5">
             <div>
                 <i class="fab fa-github"></i>
-                <a target='blank' href='https://github.com/assembler123'><p>Github</p></a>
+                <a target='blank' href='https://github.com/assembler123'>
+                    <p>Github</p>
+                </a>
             </div>
             <div>
                 <i class="fab fa-instagram"></i>
-                <a target='blank' href='https://www.instagram.com/notorious_delhiite/'><p>@notorious_delhiite</p></a>    
+                <a target='blank' href='https://www.instagram.com/notorious_delhiite/'>
+                    <p>@notorious_delhiite</p>
+                </a>
             </div>
             <div>
                 <i class="fab fa-linkedin-in"></i>
-                <a target='blank' href='https://www.linkedin.com/in/qasim-ali-6020a378/'><p>@Qasim Ali</p></a>    
+                <a target='blank' href='https://www.linkedin.com/in/qasim-ali-6020a378/'>
+                    <p>@Qasim Ali</p>
+                </a>
             </div>
         </footer>
-        <div class="copyrights"><i class="fas fa-copyright"></i> All rights reserved</div>
+        <div class="copyrights">
+            <i class="fas fa-copyright"></i>
+            All rights reserved</div>
 
     </body>
 </html>
@@ -285,29 +347,39 @@
 
     var tState = false;
     let lastOuH = window.outerHeight;
-    let lastOuW = window.outerWidth; 
-    function toggleham(){
-        tState = !tState;
-        document.getElementById('nav').style.display=(tState?'none':'block');
+    let lastOuW = window.outerWidth;
+    function toggleham() {
+        tState = ! tState;
+        document.getElementById('nav').style.display = (tState ? 'none' : 'block');
     }
-    function resetham(){
-        if(Math.abs(this.outerHeight - lastOuH)<2 || Math.abs(this.outerWidth - lastOuW)<2)
+    function resetham() {
+        if (Math.abs(this.outerHeight - lastOuH) < 2 || Math.abs(this.outerWidth - lastOuW) < 2) 
             return;
+        
         tState = false;
-        document.getElementById('nav').style.display=(tState?'none':'block');
+        document.getElementById('nav').style.display = (tState ? 'none' : 'block');
     }
-    fetch("https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@qasima9").then(res=>res.json()).then(data=>{
+    fetch("https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@qasima9").then(res => res.json()).then(data => {
         let markup = '';
-        data.items.map(i=>{
+        data.items.map(i => {
             markup += `<div class='article'>
-                        <img src=${i.thumbnail} width='100%'/>
-                        <h3>${i.title}</h3>
-                        <p><span>Author:</span> ${i.author}</p>   
-                        <p><span>Category:</span> ${i.categories.map(e=>e)}</p> 
-                        <a href=${i.link}>Read More</a>      
+                        <img src=${
+                i.thumbnail
+            } width='100%'/>
+                        <h3>${
+                i.title
+            }</h3>
+                        <p><span>Author:</span> ${
+                i.author
+            }</p>   
+                        <p><span>Category:</span> ${
+                i.categories.map(e => e)
+            }</p> 
+                        <a href=${
+                i.link
+            }>Read More</a>      
                     </div>`;
         });
         $("#blog").html(markup);
     })
- 
 </script>
