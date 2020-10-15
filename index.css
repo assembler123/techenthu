@@ -12,6 +12,7 @@ html{
   background-image:linear-gradient(rgba(0, 0, 0,0.95),rgba(16, 16, 16, 0.47)),url("https://images.pexels.com/photos/3861458/pexels-photo-3861458.jpeg?auto=compress&cs=tinysrgb&h=650&w=940 940w, https://images.pexels.com/photos/3861458/pexels-photo-3861458.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260 1260w, https://images.pexels.com/photos/3861458/pexels-photo-3861458.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940 1880w, https://images.pexels.com/photos/3861458/pexels-photo-3861458.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260 2520w");
   background-size:cover; 
   background-position: center;
+  background-attachment: fixed;
 }
 .mcon
 {
