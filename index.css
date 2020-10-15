@@ -559,8 +559,9 @@ a
 }
 .article
 {
-    padding:10px;
-
+    /* padding:10px; */
+    border-radius: 5px;
+    overflow: hidden;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 .article p 
@@ -682,6 +683,14 @@ a
     display: none;
     background: #222;
     color: #f1f1f1;
+}
+.lower
+{
+    padding: 10px;
+    padding-top: 5px;
+}
+.datet{
+    font-size: 12px !important;
 }
 @media only screen and (max-width: 1200px) {
 

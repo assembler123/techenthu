@@ -362,14 +362,20 @@
     fetch("https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@qasima9").then(res => res.json()).then(data => {
         let markup = '';
         data.items.map(i => {
+            console.log(new Date(Date.parse(i.pubDate)).toDateString())
+
+
             markup += `<div class='article'>
                         <img src=${
                 i.thumbnail
             } width='100%'/>
+            <div class='lower'>
+             <p class='datet'>${new Date(Date.parse(i.pubDate)).toDateString()}</p>
+            
                         <h3>${
                 i.title
             }</h3>
-                        <p><span>Author:</span> ${
+                       <p><span>Author:</span> ${
                 i.author
             }</p>   
                         <p><span>Category:</span> ${
@@ -377,7 +383,8 @@
             }</p> 
                         <a href=${
                 i.link
-            }>Read More</a>      
+            }>Read More</a>  
+            </div>    
                     </div>`;
         });
         $("#blog").html(markup);
