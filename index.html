@@ -24,6 +24,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <title>Qasim Ali | MERN stack developer</title>
+        <meta name="Description" content="Qasim Ali is one of the best MERN Stack developers with 3+ years of experience in JS. He offers services like Web App Development, E-commerce, ed tech development etc.">
+        <meta name="Keywords" content="MERN Stack Developer E-commerce React.JS React Developer">
+
     </head>
     <body onresize='resetham()'>
         <a class="to-top" href='#main'>
@@ -348,6 +351,25 @@
     var tState = false;
     let lastOuH = window.innerHeight;
     let lastOuW = window.innerWidth;
+    window.addEventListener('scroll',()=>{
+        if(window.innerWidth>800)
+        {
+            if(window.scrollY>550)
+            {
+                document.getElementById('nav').style.position='fixed';
+                document.getElementById('nav').style.top='0px';   
+                document.getElementById('nav').style.background='#666';
+                document.getElementById('nav').style.width='100%';
+                
+            }
+            else
+            {
+                document.getElementById('nav').style.position='relative';
+                document.getElementById('nav').style.background='none';
+                
+            }
+        }
+    })
     function toggleham() {
         tState = ! tState;
         document.getElementById('nav').style.display = (tState ? 'none' : 'block');
