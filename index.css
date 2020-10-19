@@ -22,7 +22,7 @@ html{
 }
 #nav
 {
-    z-index: 4;
+    z-index: 6;
     transition: all 0.3s ease-in-out;
 }
 @keyframes ltrMain{
