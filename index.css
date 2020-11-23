@@ -7,6 +7,10 @@
 html{
     scroll-behavior: smooth;
 }
+.showcard
+{
+   box-shadow:0 2px 29px rgba(34, 34, 34, 0.14);
+}
 .wrp
 {
   background-image:linear-gradient(rgba(0, 0, 0,0.95),rgba(16, 16, 16, 0.47)),url("https://images.pexels.com/photos/3861458/pexels-photo-3861458.jpeg?auto=compress&cs=tinysrgb&h=650&w=940 940w, https://images.pexels.com/photos/3861458/pexels-photo-3861458.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260 1260w, https://images.pexels.com/photos/3861458/pexels-photo-3861458.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940 1880w, https://images.pexels.com/photos/3861458/pexels-photo-3861458.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260 2520w");
@@ -276,7 +280,7 @@ background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, F
 }
 .contact-widg button:hover
 {
-    background: #8360c3;
+    background: #ff6b6b;
     color: #f1f1f1;
 }
 .services-sect
@@ -430,11 +434,13 @@ background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, F
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap:30px;
-    margin: 30px;
+    margin:30px auto;
+    width: 80%;
 }
 .showcase-sect p
 {
-    color: #888;
+    color: #222;
+    letter-spacing: 1.5px;
     text-align: center;
 }
 .card-templ
@@ -568,7 +574,8 @@ a
     /* padding:10px; */
     border-radius: 5px;
     overflow: hidden;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow:0 2px 29px rgba(34, 34, 34, 0.14);
+
 }
 .article p 
 {
@@ -866,5 +873,12 @@ a
         border: none;
         padding: 5px;
         font-size: 21px;
+    }
+}
+#project
+{
+    p
+    {
+        color: #202020;
     }
 }

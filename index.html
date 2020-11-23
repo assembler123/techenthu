@@ -250,27 +250,9 @@
         </section>
         <section class="showcase-sect mt-5" id='project'>
             <h1>showcase
-                <i class="fas fa-lock"></i>
             </h1>
-            <div class="gr-show">
-                <div class="card-templ">
-                    <div class="card-templ-title">asxxxtit.io</div>
-                </div>
-                <div class="card-templ">
-                    <div class="card-templ-title">caxxxxxarts.com</div>
-                </div>
-                <div class="card-templ">
-                    <div class="card-templ-title">ipexxxb.co.in</div>
-                </div>
-                <div class="card-templ">
-                    <div class="card-templ-title">buyexxxxire.com</div>
-                </div>
-                <div class="card-templ">
-                    <div class="card-templ-title">flycommerce</div>
-                </div>
-                <div class="card-templ">
-                    <div class="card-templ-title">ixxxx.ipxxxb.co.in</div>
-                </div>
+            <p>Personal Projects/Designs Contact to get the source code</p>
+            <div class="gr-show" id='gshow'>
             </div>
         </section>
         <section class="blog-section mt-5" id='blogs'>
@@ -307,7 +289,7 @@
                         </div>
                         <div class="one-obj">
                             <i class="fas fa-clipboard-list"></i>
-                            <h3>0 Deadlines missed (_check_)</h3>
+                            <h3>0 Deadlines missed</h3>
                         </div>
                         <div class="one-obj">
                             <i class="fab fa-react"></i>
@@ -357,6 +339,11 @@
     var tState = false;
     let lastOuH = window.innerHeight;
     let lastOuW = window.innerWidth;
+    for(let i=1;i<13;i++)
+    {
+        console.log(i)
+        document.getElementById('gshow').innerHTML+=`<div class='showcard'><img src='./source/${String.fromCharCode(97 + i)}.png' width='100%'></div>`;
+    }
     window.addEventListener('scroll', () => {
         if (window.innerWidth > 800) {
             if (window.scrollY > 550) {
