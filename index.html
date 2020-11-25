@@ -252,8 +252,7 @@
             <h1>showcase
             </h1>
             <p>Personal Projects/Designs Contact to get the source code</p>
-            <div class="gr-show" id='gshow'>
-            </div>
+            <div class="gr-show" id='gshow'></div>
         </section>
         <section class="blog-section mt-5" id='blogs'>
             <h1>blogs</h1>
@@ -334,15 +333,33 @@
 
     </body>
 </html>
+
 <script>
 
     var tState = false;
     let lastOuH = window.innerHeight;
     let lastOuW = window.innerWidth;
-    for(let i=1;i<13;i++)
-    {
+    // $(".p90").inViewport(function (px) {
+    //     if (px) 
+    //         $(this).addClass("letor");
+        
+    // });
+    // $(".p80").inViewport(function (px) {
+    //     if (px) 
+    //         $(this).addClass("letor");
+        
+    // });
+    // $(".p70").inViewport(function (px) {
+    //     if (px) 
+    //         $(this).addClass("letor");
+        
+    // });
+
+    for (let i = 1; i < 13; i++) {
         console.log(i)
-        document.getElementById('gshow').innerHTML+=`<div class='showcard'><img src='./source/${String.fromCharCode(97 + i)}.jpg' width='100%'></div>`;
+        document.getElementById('gshow').innerHTML += `<div class='showcard'><img src='./source/${
+            String.fromCharCode(97 + i)
+        }.jpg' width='100%'></div>`;
     }
     window.addEventListener('scroll', () => {
         if (window.innerWidth > 800) {
@@ -375,16 +392,18 @@
     fetch("https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@qasima9").then(res => res.json()).then(data => {
         let markup = '';
         data.items.map(i => {
-            console.log(new Date(Date.parse(i.pubDate)).toDateString())
-
-
+            let dt = new Date(Date.parse(i.pubDate)).toDateString();
+            if(dt=='Invalid Date')
+            {
+                dt = ""
+            }
             markup += `<div class='article'>
                         <img src=${
                 i.thumbnail
             } width='100%'/>
             <div class='lower'>
              <p class='datet'>${
-                new Date(Date.parse(i.pubDate)).toDateString()
+                dt
             }</p>
             
                         <h3>${
